@@ -1,19 +1,448 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="#F9E4CD">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- App Header -->
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3BEB5"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ramadan Companion 🌙"
+                android:textColor="#4B1219"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Daily Ayah Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dailyAyahCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerLayout"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#F3BEB5"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Ayah 📖"
+                    android:textColor="#4B1219"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ayahTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="And when My servants ask you about Me, then surely I am near. I respond to the call of the caller when he calls upon Me. - Al-Baqarah 2:186"
+                    android:textColor="#8A2A3F"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Good Deeds Score Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/goodDeedsScoreCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dailyAyahCard"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3BEB5"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/goodDeedsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good Deeds Score 🏅"
+                    android:textColor="#4B1219"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/detailsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Details"
+                    android:textColor="#4B1219"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/rankText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/goodDeedsTitle"
+                    android:layout_marginTop="16dp"
+                    android:text="Gold"
+                    android:textColor="#8A2A3F"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pointsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rankText"
+                    android:text="65 points • 3 day streak"
+                    android:textColor="#8A2A3F" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:id="@+id/navigationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goodDeedsScoreCard"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/prayerTimesButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:padding="16dp"
+                android:text="Prayer Times 🤲"
+                android:textSize="14sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888"
+                android:drawablePadding="8dp" />
+
+            <Button
+                android:id="@+id/goodDeedsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:padding="16dp"
+                android:text="Good Deeds ✅"
+                android:textSize="14sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <Button
+                android:id="@+id/calendarButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:padding="16dp"
+                android:text="Calendar 📅"
+                android:textSize="14sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888"
+                android:onClick="toggleCalendarView" />
+        </LinearLayout>
+
+        <!-- Calendar View (Initially Hidden) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/calendarCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navigationLayout"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3BEB5" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Zakat Information Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/zakatCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendarCardView"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3BEB5"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/zakatTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zakat Information "
+                    android:textColor="#4B1219"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/zakatInfo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zakatTitle"
+                    android:layout_marginTop="8dp"
+                    android:text="• Zakat is 2.5% of your wealth above the nisab threshold"
+                    android:textColor="#8A2A3F" />
+
+                <TextView
+                    android:id="@+id/zakatInfo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zakatInfo1"
+                    android:layout_marginTop="4dp"
+                    android:text="• Current nisab: ~$800 USD (gold standard)"
+                    android:textColor="#8A2A3F" />
+
+                <TextView
+                    android:id="@+id/zakatInfo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zakatInfo2"
+                    android:layout_marginTop="4dp"
+                    android:text="• Enter your total applicable wealth below"
+                    android:textColor="#8A2A3F" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Zakat Calculator Section -->
+        <RelativeLayout
+            android:id="@+id/calculatorSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zakatCard"
+            android:layout_margin="16dp">
+
+            <EditText
+                android:id="@+id/wealthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3BEB5"
+                android:gravity="end"
+                android:inputType="numberDecimal"
+                android:textSize="48sp"
+                android:textColor="#8A2A3F"
+                android:text="0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wealthEditText"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zakat Amount: "
+                    android:background="#F3BEB5"
+                    android:textColor="#4B1219"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/zakatAmountTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F7CEC7"
+                    android:gravity="end"
+                    android:text="0.00"
+                    android:textColor="#8A2A3F"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Calculator Keypad -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculatorSection"
+            android:layout_margin="16dp"
+            android:columnCount="3"
+            android:rowCount="4">
+
+            <!-- First row -->
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="C"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="⌫"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="9"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <!-- Second row -->
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="7"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="8"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="6"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <!-- Third row -->
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="4"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="5"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="3"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <!-- Fourth row -->
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="1"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="2"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+            <!-- Fifth row -->
+            <Button
+                android:id="@+id/buttonDecimal"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_column="1"
+                android:text="."
+                android:textSize="20sp"
+                android:textColor="#4B1219"
+                android:backgroundTint="#EF8888" />
+
+        </GridLayout>
+
+    </RelativeLayout>
+</ScrollView>
