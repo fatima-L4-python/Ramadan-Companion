@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#DDD1FA"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prayer Times 🤲"
+            android:textColor="#B50e43"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Fajr Prayer Time -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fajr"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fajrTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="--:-- AM"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- Sunrise Time -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunrise"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sunriseTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="--:-- AM"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- Dhuhr Prayer Time -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dhuhr"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dhuhrTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="--:-- PM"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- Asr Prayer Time -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asr"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/asrTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="--:-- PM"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- Maghrib Prayer Time -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maghrib"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/maghribTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="--:-- PM"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- Isha Prayer Time -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Isha"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ishaTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="--:-- PM"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Close"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

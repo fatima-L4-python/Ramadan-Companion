@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#DDD1FA"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good Deeds Tracker ✅"
+            android:textColor="#B50e43"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Read Quran -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/quranTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read Quran for 30 minutes"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/quranPointsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quranTitleText"
+                android:text="10 points"
+                android:textColor="#8A2A3F"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addQuranButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="100dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:textColor="#B50e43"
+                app:backgroundTint="#DDD1FA"
+                app:strokeColor="#8A2A3F"
+                app:strokeWidth="1dp" />
+        </RelativeLayout>
+
+        <!-- Give charity -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/charityTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Give charity"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/charityPointsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/charityTitleText"
+                android:text="15 points"
+                android:textColor="#8A2A3F"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addCharityButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="100dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:textColor="#B50e43"
+                app:backgroundTint="#DDD1FA"
+                app:strokeColor="#8A2A3F"
+                app:strokeWidth="1dp" />
+        </RelativeLayout>
+
+        <!-- Pray Taraweeh -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/taraweehTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pray Taraweeh"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/taraweehPointsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/taraweehTitleText"
+                android:text="20 points"
+                android:textColor="#8A2A3F"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addTaraweehButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="100dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:textColor="#B50e43"
+                app:backgroundTint="#DDD1FA"
+                app:strokeColor="#8A2A3F"
+                app:strokeWidth="1dp" />
+        </RelativeLayout>
+
+        <!-- Help someone -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/helpTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help someone in need"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/helpPointsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/helpTitleText"
+                android:text="15 points"
+                android:textColor="#8A2A3F"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addHelpButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="100dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:textColor="#B50e43"
+                app:backgroundTint="#DDD1FA"
+                app:strokeColor="#8A2A3F"
+                app:strokeWidth="1dp" />
+        </RelativeLayout>
+
+        <!-- Make dua -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/duaTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make dua for others"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/duaPointsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/duaTitleText"
+                android:text="5 points"
+                android:textColor="#8A2A3F"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addDuaButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="100dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:textColor="#B50e43"
+                app:backgroundTint="#DDD1FA"
+                app:strokeColor="#8A2A3F"
+                app:strokeWidth="1dp" />
+        </RelativeLayout>
+
+        <!-- Share food -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/foodTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share food for iftar"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/foodPointsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/foodTitleText"
+                android:text="10 points"
+                android:textColor="#8A2A3F"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addFoodButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="100dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:textColor="#B50e43"
+                app:backgroundTint="#DDD1FA"
+                app:strokeColor="#8A2A3F"
+                app:strokeWidth="1dp" />
+        </RelativeLayout>
+
+        <!-- Total Score -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8A2A3F"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Score"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalScoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="10 points"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Current Level -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Level"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/currentLevelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Bronze 🏆"
+                android:textColor="#8A2A3F"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="Close"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

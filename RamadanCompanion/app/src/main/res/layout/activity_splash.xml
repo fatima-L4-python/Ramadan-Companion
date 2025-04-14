@@ -2,14 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F3BEB5">
+    android:background="#F7D9F5">
 
     <ImageView
         android:id="@+id/splashIcon"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/ic_app_logo" />
+        android:src="@drawable/ic_app_logo2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="Ramadan Companion"
-        android:textColor="#4B1219"
+        android:textColor="#E91E63"
         android:textSize="34sp"
         android:textStyle="bold" />
 

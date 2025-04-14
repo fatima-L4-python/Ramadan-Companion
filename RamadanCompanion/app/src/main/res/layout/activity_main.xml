@@ -9,21 +9,21 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F9E4CD">
+        android:background="#F7D9F5">
 
         <!-- App Header -->
         <RelativeLayout
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#F3BEB5"
+            android:background="#7E60C7"
             android:padding="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ramadan Companion 🌙"
-                android:textColor="#4B1219"
+                android:textColor="#8A0334"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -42,14 +42,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="#F3BEB5"
+                android:background="#DDD1FA"
                 android:padding="16dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Daily Ayah 📖"
-                    android:textColor="#4B1219"
+                    android:textColor="#B50e43"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -77,7 +77,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#F3BEB5"
+                android:background="#DDD1FA"
                 android:padding="16dp">
 
                 <TextView
@@ -85,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Good Deeds Score 🏅"
-                    android:textColor="#4B1219"
+                    android:textColor="#B50e43"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -136,8 +136,8 @@
                 android:padding="16dp"
                 android:text="Prayer Times 🤲"
                 android:textSize="14sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888"
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7"
                 android:drawablePadding="8dp" />
 
             <Button
@@ -150,21 +150,10 @@
                 android:padding="16dp"
                 android:text="Good Deeds ✅"
                 android:textSize="14sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
-            <Button
-                android:id="@+id/calendarButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginStart="4dp"
-                android:padding="16dp"
-                android:text="Calendar 📅"
-                android:textSize="14sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888"
-                android:onClick="toggleCalendarView" />
+
         </LinearLayout>
 
         <!-- Calendar View (Initially Hidden) -->
@@ -198,7 +187,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#F3BEB5"
+                android:background="#DDD1FA"
                 android:padding="16dp">
 
                 <TextView
@@ -206,7 +195,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Zakat Information "
-                    android:textColor="#4B1219"
+                    android:textColor="#B50e43"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -251,7 +240,7 @@
                 android:id="@+id/wealthEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#F3BEB5"
+                android:background="#DDD1FA"
                 android:gravity="end"
                 android:inputType="numberDecimal"
                 android:textSize="48sp"
@@ -268,15 +257,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Zakat Amount: "
-                    android:background="#F3BEB5"
-                    android:textColor="#4B1219"
+                    android:background="#DDD1FA"
+                    android:textColor="#B50e43"
                     android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/zakatAmountTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#F7CEC7"
+                    android:background="#DDD1FA"
                     android:gravity="end"
                     android:text="0.00"
                     android:textColor="#8A2A3F"
@@ -302,8 +291,8 @@
                 android:layout_margin="4dp"
                 android:text="C"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <Button
                 android:id="@+id/buttonDelete"
@@ -313,8 +302,8 @@
                 android:layout_margin="4dp"
                 android:text="⌫"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <Button
                 android:id="@+id/button9"
@@ -324,8 +313,8 @@
                 android:layout_margin="4dp"
                 android:text="9"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <!-- Second row -->
             <Button
@@ -336,8 +325,8 @@
                 android:layout_margin="4dp"
                 android:text="7"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <Button
                 android:id="@+id/button8"
@@ -347,8 +336,8 @@
                 android:layout_margin="4dp"
                 android:text="8"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <Button
                 android:id="@+id/button6"
@@ -358,8 +347,8 @@
                 android:layout_margin="4dp"
                 android:text="6"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <!-- Third row -->
             <Button
@@ -370,8 +359,8 @@
                 android:layout_margin="4dp"
                 android:text="4"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <Button
                 android:id="@+id/button5"
@@ -381,8 +370,8 @@
                 android:layout_margin="4dp"
                 android:text="5"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <Button
                 android:id="@+id/button3"
@@ -392,8 +381,8 @@
                 android:layout_margin="4dp"
                 android:text="3"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <!-- Fourth row -->
             <Button
@@ -404,8 +393,8 @@
                 android:layout_margin="4dp"
                 android:text="1"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <Button
                 android:id="@+id/button2"
@@ -415,8 +404,8 @@
                 android:layout_margin="4dp"
                 android:text="2"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <Button
                 android:id="@+id/button0"
@@ -426,8 +415,8 @@
                 android:layout_margin="4dp"
                 android:text="0"
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
             <!-- Fifth row -->
             <Button
@@ -439,8 +428,8 @@
                 android:layout_column="1"
                 android:text="."
                 android:textSize="20sp"
-                android:textColor="#4B1219"
-                android:backgroundTint="#EF8888" />
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7" />
 
         </GridLayout>
 
