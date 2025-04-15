@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="410dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F7D9F5"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ramadan Fasting Calendar"
+        android:textColor="#B50e43"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Calendar Grid with 5 rows -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="7"
+        android:rowCount="5">
+
+        <!-- Row 1: Days 1-7 -->
+        <Button
+            android:id="@+id/day1Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="1"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day2Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="2"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day3Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="3"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day4Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="4"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day5Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="5"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day6Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="6"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day7Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="7"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <!-- Row 2: Days 8-14 -->
+        <Button
+            android:id="@+id/day8Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="8"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day9Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="9"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day10Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="10"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day11Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="11"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day12Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="12"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day13Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="13"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day14Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="14"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <!-- Row 3: Days 15-21 -->
+        <Button
+            android:id="@+id/day15Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="15"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day16Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="16"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day17Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="17"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day18Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="18"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day19Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="19"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day20Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="20"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day21Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="21"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <!-- Row 4: Days 22-28 -->
+        <Button
+            android:id="@+id/day22Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="22"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day23Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="23"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day24Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="24"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day25Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="25"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day26Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="26"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day27Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="27"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day28Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="28"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <!-- Row 5: Days 29-30 -->
+        <Button
+            android:id="@+id/day29Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="29"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/day30Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:text="30"
+            android:textSize="12sp"
+            android:textColor="#B50e43"
+            android:backgroundTint="#DBA8E7"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <!-- Empty space for remaining cells -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Close"
+        android:textSize="16sp"
+        android:textColor="#B50e43"
+        android:backgroundTint="#DBA8E7" />
+
+</LinearLayout>

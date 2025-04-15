@@ -153,7 +153,18 @@
                 android:textColor="#B50e43"
                 android:backgroundTint="#DBA8E7" />
 
-
+            <Button
+                android:id="@+id/calendarButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:padding="16dp"
+                android:text="Calendar      📅"
+                android:textSize="14sp"
+                android:textColor="#B50e43"
+                android:backgroundTint="#DBA8E7"
+                android:onClick="toggleCalendarView" />
         </LinearLayout>
 
         <!-- Calendar View (Initially Hidden) -->
